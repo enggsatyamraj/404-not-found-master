@@ -12,11 +12,13 @@ body{
 }
 .supreme{
     display:flex;
-    max-height:300px;
     max-width:700px;
 }
 .main1{
     flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .main1 img{
     width:100%;
@@ -50,9 +52,14 @@ button{
     font-family:var(--font_family);
 }
 @media screen and (max-width:475px) {
+    body{
+        height:fit-content;
+        display:block
+    }
     .supreme{
         display:flex;
         flex-direction:column;
+        margin-top:0;
     }
     .class1{
         font-size:1.65rem;
